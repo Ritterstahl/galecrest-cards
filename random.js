@@ -1,1 +1,2 @@
-let x = Math.floor((Math.random() * 40) + 1);
+var x = Math.floor((Math.random() * 40) + 1);
+document.getElementById("demo").innerHTML = x;
