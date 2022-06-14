@@ -11,4 +11,4 @@ var myIndex = cards.indexOf(5);
 if (myIndex !== -1) {
     cards.splice(myIndex, 1);
 }
-console.log(cards);
+alert(cards);
