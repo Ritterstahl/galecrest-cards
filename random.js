@@ -1,1 +1,1 @@
-let x = Math.floor((Math.random() * 10) + 1);
+let x = Math.floor((Math.random() * 40) + 1);
