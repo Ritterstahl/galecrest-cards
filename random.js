@@ -12,3 +12,7 @@ var myIndex = cards.indexOf(5);
 if (myIndex !== -1) {
     cards.splice(myIndex, 1);
 }
+
+$( "#choose" ).click(function() {
+  alert( "Handler for .click() called." );
+});
