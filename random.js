@@ -2,7 +2,7 @@
 //document.getElementById("demo").innerHTML = x;
 
 var cards = [];
-var day = 1;
+var voyage = 1;
 var card = 0;
 
 for (var i = 1; i <= 40; i++) {
@@ -22,7 +22,10 @@ function chooseCard() {
 $( "#choose" ).click(function() {
   card++;
   if (card <= 6) {
-     console.log("card number "+card);
-     chooseCard();
+    console.log("card number "+card);
+    chooseCard();
   } 
+  if (card == 6) {
+     voyage ++;
+  }
 });
