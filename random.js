@@ -11,10 +11,12 @@ for (var i = 1; i <= 40; i++) {
 
 function chooseCard() {
   var c = Math.floor((Math.random() * 40) + 1);
-  var myIndex = cards.indexOf(c);
-  if (myIndex !== -1) {
-    cards.splice(myIndex, 1);
+  var i = cards.indexOf(c);
+  if (i !== -1) {
+    cards.splice(i, 1);
   }
+  console.log(c);
+  console.log(cards); 
 }
 
 $( "#choose" ).click(function() {
