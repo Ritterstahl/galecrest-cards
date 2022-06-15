@@ -29,3 +29,18 @@ $( "#choose" ).click(function() {
      voyage ++;
   }
 });
+
+$( "#choose" ).click(function() {
+  var cards = [];
+  var voyage = 1;
+  var card = 0;
+  var numCards = 40;
+
+  for (var i = 1; i <= numCards; i++) {
+    cards.push(i);
+  }
+  
+  for (var i = 1; i <= 18; i++) {
+   $('#card'+(card)).append("");
+  }
+});
