@@ -6,16 +6,18 @@ var voyage = 1;
 var card = 0;
 var numCards = 40;
 
-for (var i = 1; i <= 40; i++) {
+for (var i = 1; i <= numCards; i++) {
    cards.push(i);
 }
 
 function chooseCard() {
-  var c = Math.floor((Math.random() * numCards) + 1);
+  var c = Math.floor((Math.random() * cards.length) + 1);
   var i = cards.indexOf(c);
   if (i !== -1) {
     cards.splice(i, 1);
     numCards --;
+  } else {
+    chooseCard(); 
   }
   $('#card'+(card)).append(c);
   console.log(c);
