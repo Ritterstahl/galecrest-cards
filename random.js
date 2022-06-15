@@ -17,7 +17,7 @@ function chooseCard() {
     cards.splice(i, 1);
     numCards --;
   }
-  $('#day'+(card+1)).append(c);
+  $('#card'+(card+1)).append(c);
   console.log(c);
   console.log(cards); 
 }
