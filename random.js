@@ -41,6 +41,6 @@ $( "#reset" ).click(function() {
   }
   
   for (var i = 1; i <= 18; i++) {
-    $('#card'+(card)).append("");
+    $('#card'+(i)).empty();
   }
 });
