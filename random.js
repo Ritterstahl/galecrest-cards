@@ -25,7 +25,7 @@ $( "#choose" ).click(function() {
     console.log("card number "+card);
     chooseCard();
   } 
-  if (card == 6) {
+  if (card == 18) {
      voyage ++;
   }
 });
