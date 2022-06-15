@@ -32,10 +32,10 @@ $( "#choose" ).click(function() {
 
 $( "#reset" ).click(function() {
   console.log("RESET");
-  var cards = [];
-  var voyage = 1;
-  var card = 0;
-  var numCards = 40;
+  cards = [];
+  voyage = 1;
+  card = 0;
+  numCards = 40;
 
   for (var i = 1; i <= numCards; i++) {
     cards.push(i);
