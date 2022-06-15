@@ -3,16 +3,24 @@
 
 var cards = [];
 var day = 1;
+var card = 0;
 
 for (var i = 1; i <= 40; i++) {
    cards.push(i);
 }
 
-var myIndex = cards.indexOf(5);
-if (myIndex !== -1) {
+function chooseCard() {
+  var c = Math.floor((Math.random() * 40) + 1);
+  var myIndex = cards.indexOf(c);
+  if (myIndex !== -1) {
     cards.splice(myIndex, 1);
+  }
 }
 
 $( "#choose" ).click(function() {
-  alert( "Handler for .click() called." );
+  card++;
+  if (card <= 6) {
+     console.log("card number "+card);
+     chooseCard();
+  } 
 });
