@@ -31,6 +31,7 @@ $( "#choose" ).click(function() {
 });
 
 $( "#reset" ).click(function() {
+  console.log("RESET");
   var cards = [];
   var voyage = 1;
   var card = 0;
