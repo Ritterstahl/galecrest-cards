@@ -15,7 +15,7 @@ function chooseCard() {
   if (i !== -1) {
     cards.splice(i, 1);
   }
-  $('#day'+(card+1)).text(c);
+  $('#day'+(card+1)).append(c);
   console.log(cards); 
 }
 
