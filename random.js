@@ -21,11 +21,11 @@ function chooseCard() {
 
 $( "#choose" ).click(function() {
   card++;
-  if (card <= 6) {
+  if (card <= 18) {
     console.log("card number "+card);
     chooseCard();
   } 
-  if (card == 18) {
+  if (card % 6 == 0) {
      voyage ++;
   }
 });
