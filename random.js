@@ -30,7 +30,7 @@ $( "#choose" ).click(function() {
   }
 });
 
-$( "#choose" ).click(function() {
+$( "#reset" ).click(function() {
   var cards = [];
   var voyage = 1;
   var card = 0;
