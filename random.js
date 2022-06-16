@@ -1,11 +1,19 @@
-var cards = [];
-var voyage = 1;
-var card = 0;
-var numCards = 40;
+var cards;
+var voyage;
+var card;
+var numCards;
 
-for (var i = 1; i <= numCards; i++) {
-   cards.push(i);
+function init() {
+   cards = [];
+   voyage = 1;
+   card = 0;
+   numCards = 40;
+   for (var i = 1; i <= numCards; i++) {
+      cards.push(i);
+   }
 }
+
+init();
 
 const randomCard = cards => cards.splice((Math.random() * cards.length) | 0, 1);
 
@@ -29,18 +37,10 @@ $( "#choose" ).click(function() {
 });
 
 $( "#reset" ).click(function() {
-  console.log("RESET");
-  cards = [];
-  voyage = 1;
-  card = 0;
-  numCards = 40;
-
-  for (var i = 1; i <= numCards; i++) {
-    cards.push(i);
-  }
+  init();
   
   for (var i = 1; i <= 18; i++) {
     $('#card'+(i)).empty();
-     $('#card'+(card)).css("background-color", "#efefef");
+    $('#card'+(i)).css("background-color", "#efefef");
   }
 });
