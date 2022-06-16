@@ -1,6 +1,3 @@
-//var x = Math.floor((Math.random() * 40) + 1);
-//document.getElementById("demo").innerHTML = x;
-
 var cards = [];
 var voyage = 1;
 var card = 0;
@@ -15,6 +12,7 @@ const randomCard = cards => cards.splice((Math.random() * cards.length) | 0, 1);
 function chooseCard() {  
   var c = randomCard(cards);
   $('#card'+(card)).append(c);
+  $('#card'+(card)).css("background-color", "#ff0000");
   console.log(c);
   console.log(cards); 
 }
