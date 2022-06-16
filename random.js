@@ -41,5 +41,6 @@ $( "#reset" ).click(function() {
   
   for (var i = 1; i <= 18; i++) {
     $('#card'+(i)).empty();
+     $('#card'+(card)).css("background-color", "#efefef");
   }
 });
