@@ -36,6 +36,7 @@ const init = () => {
   selectedCardsInOrder = voyages.flat();
 };
 
+// Add event handlers
 document.getElementById("choose").addEventListener("click", () => {
   const card = selectedCardsInOrder[cardIndex];
 
